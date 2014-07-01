@@ -5,7 +5,7 @@ template <class Iterator>
 bool is_sorted (Iterator first, Iterator last)
 {
     if (first == last) return true;
-    Iterator next = first;
+    Iterator next  = first;
     while (++next != last) {
         if (*next < *first)
             return false;
