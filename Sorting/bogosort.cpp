@@ -17,6 +17,7 @@ bool is_sorted (Iterator first, Iterator last)
 template<class Iterator>
 void bogosort(Iterator begin, Iterator end)
 {
-    while(!is_sorted(begin, end))
+    while(!is_sorted(begin, end)) {
         random_shuffle(begin, end);
+    }
 }
