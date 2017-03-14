@@ -10,6 +10,7 @@ bool is_sorted (Iterator first, Iterator last, bool increasing = true)
         if (increasing && *next < *first)
             return false;
         else if(!increasing && *next > *first)
+            return false;
         ++first;
     }
     return true;
